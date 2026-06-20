@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import './App.css';
 
-const SERVER_URL = 'http://localhost:3000';
-
+const SERVER_URL = 'https://memory-game-production-8f6e.up.railway.app';
 function App() {
   const [socket, setSocket] = useState(null);
   const [screen, setScreen] = useState('home');
