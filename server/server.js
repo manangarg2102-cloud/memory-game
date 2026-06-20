@@ -80,7 +80,7 @@ io.on('connection', (socket) => {
     socket.emit('room-created', {
       roomId,
       room: rooms[roomId],
-      inviteLink: `https://YOUR_VERCEL_APP.vercel.app/join/${roomId}`
+      inviteLink: `https://memory-game-friends.app/join/${roomId}`
     });
     io.to(roomId).emit('room-update', rooms[roomId]);
   });
